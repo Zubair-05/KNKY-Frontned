@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-default {
+  @apply flex m-1 px-4 py-1 justify-center items-center rounded-[8px] bg-[#ffffff] focus:bg-[#AC1991] focus:text-white text-black text-base font-bold
+}
+
+.button-active {
+  @apply flex m-1 px-4 py-1 justify-center items-center rounded-[8px] bg-[#AC1991] text-white text-base font-bold
+}
