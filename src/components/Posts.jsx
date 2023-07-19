@@ -45,10 +45,15 @@ const Post = () => {
       
       {
         isLoggedIn ? (
-          <div className="posts-container">
-            {posts.map((post) => (
-              <FeaturedCard/>
-            ))}
+          <div className="posts-container m-5 grid grid-cols-3 grid-flow-row gap-5">
+            <FeaturedCard/>
+            <FeaturedCard/>
+            <FeaturedCard/>
+            <FeaturedCard/>
+            <FeaturedCard/>
+            <FeaturedCard/>
+            <FeaturedCard/>
+            <FeaturedCard/>
           </div>
         ) : (
           <div>
