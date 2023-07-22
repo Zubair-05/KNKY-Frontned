@@ -7,7 +7,7 @@ const List = () => {
     const [filter, setFilter] = useRecoilState(activeFilter);
 
     return (
-        <div className="flex bg-[#F5F5F6]">
+        <div className="flex bg-[#F5F5F6] py-1">
             <button
                 className={filter === 'featured' ? 'button-active' : 'button-default'}
                 onClick={() => setFilter('featured')}

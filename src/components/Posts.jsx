@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useRecoilValue } from 'recoil';
 import { logState, activeFilter } from './atoms';
 import FeaturedCard from './FeaturedCard';
+import JoinUsToSee from './JoinUsToSee';
 const Post = () => {
   
 
@@ -44,8 +45,8 @@ const Post = () => {
     <div>
       
       {
-        isLoggedIn ? (
-          <div className="posts-container m-5 grid grid-cols-3 grid-flow-row gap-5">
+        (filter == 'featured') ? (
+          <div className=" grid grid-cols-3 grid-flow-row gap-5">
             <FeaturedCard/>
             <FeaturedCard/>
             <FeaturedCard/>
@@ -56,9 +57,7 @@ const Post = () => {
             <FeaturedCard/>
           </div>
         ) : (
-          <div>
-            <h1>Please login to view posts</h1>
-          </div>
+          <JoinUsToSee/>
         )
       }
 
